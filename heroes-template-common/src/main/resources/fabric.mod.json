@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "name": "Heroes-Common",
+  "id": "heroescommon",
+  "version": "${version}",
+  "description": "Heroes-Common",
+  "authors": [
+    "NoRiskk",
+    "Freshkenny",
+    "BestAuto"
+  ],
+  "icon": "assets/heroescommon/icon.png",
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "gg.norisk.heroes.common.HeroesCommon"
+      }
+    ]
+  },
+  "mixins": [
+    "heroes-common.mixins.json"
+  ],
+  "depends": {
+    "java": ">=17",
+    "minecraft": "*",
+    "fabric": "*",
+    "fabric-language-kotlin": "*"
+  }
+}

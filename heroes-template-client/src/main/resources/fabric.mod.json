@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "name": "Heroes-Client",
+  "id": "heroesclient",
+  "version": "${version}",
+  "description": "Heroes-Client",
+  "authors": [
+    "NoRiskk",
+    "Freshkenny",
+    "BestAuto"
+  ],
+  "icon": "assets/heroesclient/icon.png",
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "gg.norisk.heroes.client.HeroesClient"
+      }
+    ]
+  },
+  "mixins": [
+    "heroes-client.mixins.json"
+  ],
+  "depends": {
+    "java": ">=17",
+    "minecraft": "*",
+    "fabric": "*",
+    "fabric-language-kotlin": "*"
+  }
+}

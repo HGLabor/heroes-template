@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "name": "Heroes-Server",
+  "id": "heroesserver",
+  "version": "${version}",
+  "description": "Heroes-Server",
+  "authors": [
+    "NoRiskk",
+    "Freshkenny",
+    "BestAuto"
+  ],
+  "icon": "assets/heroesserver/icon.png",
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "server": [
+      {
+        "adapter": "kotlin",
+        "value": "gg.norisk.heroes.server.HeroesServer"
+      }
+    ]
+  },
+  "mixins": [
+    "heroes-server.mixins.json"
+  ],
+  "depends": {
+    "java": ">=17",
+    "minecraft": "*",
+    "fabric": "*",
+    "fabric-language-kotlin": "*"
+  }
+}
