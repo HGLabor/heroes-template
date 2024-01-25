@@ -15,7 +15,7 @@ repositories {
 }
 
 dependencies {
-    include(api(project(":heroes-template-common"))!!)
+    include(modImplementation(project(":heroes-template-common"))!!)
 }
 
 

@@ -12,6 +12,7 @@ version = "1.0.0"
 repositories {
     mavenCentral()
     maven("https://maven.wispforest.io")
+    include(modImplementation(project(":heroes-template-common"))!!)
 }
 
 dependencies {
