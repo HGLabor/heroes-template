@@ -12,10 +12,10 @@ version = "1.0.0"
 repositories {
     mavenCentral()
     maven("https://maven.wispforest.io")
-    include(implementation(project(":heroes-template-common", configuration = "namedElements"))!!)
 }
 
 dependencies {
+    include(implementation(project(":heroes-template-common", configuration = "namedElements"))!!)
 }
 
 tasks {
