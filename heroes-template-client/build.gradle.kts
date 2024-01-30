@@ -15,7 +15,7 @@ repositories {
 }
 
 dependencies {
-    include(modImplementation(project(":heroes-template-common"))!!)
+    include(implementation(project(":heroes-template-common", configuration = "namedElements"))!!)
 }
 
 
